@@ -29,32 +29,32 @@ class vvector : public std::vector<Type>
 			return *this;
 		}
 
-		vvector& operator+=(const vvector& vv) { 
+		vvector& operator+=(const vvector& vv) {
 			for(size_t i=0;i!=(*this).size();++i){
 				(*this)[i]+=vv[i];
 			}
-			return *this; 
+			return *this;
 		}
 
-		vvector& operator-=(const vvector& vv) { 
+		vvector& operator-=(const vvector& vv) {
 			for(size_t i=0;i!=(*this).size();++i){
 				(*this)[i]-=vv[i];
 			}
-			return *this; 
+			return *this;
 		}
 
-		template<class C> vvector& operator*=(const C& CC) { 
+		template<class C> vvector& operator*=(const C& CC) {
 			for(size_t i=0;i!=(*this).size();++i){
-				(*this)[i]*=CC; 
+				(*this)[i]*=CC;
 			}
-			return *this; 
+			return *this;
 		}
 
-		template<class C> vvector& operator/=(const C& CC) { 
+		template<class C> vvector& operator/=(const C& CC) {
 			for(size_t i=0;i!=(*this).size();++i){
-				(*this)[i]/=CC; 
+				(*this)[i]/=CC;
 			}
-			return *this; 
+			return *this;
 		}
 
 		Type Norm1(){
@@ -102,9 +102,9 @@ class vvector : public std::vector<Type>
 			}
 			return s;
 		}
-		
+
 		Type Householder(vvector<Type>& v){//x的Householder变换,返回beta
-			int n=(*this).size(); 
+			int n=(*this).size();
 			Type eta=NormInfinite();
 			if(eta==0){
 				return 0;
@@ -135,7 +135,7 @@ class vvector : public std::vector<Type>
         template<class T> friend std::istream& operator>>(std::istream&, vvector&);
 };
 
-template<class T> 
+template<class T>
 std::istream& operator>>(std::istream& in, vvector<T>& vv){
 	std::cout<<"Please input numbers"<<std::endl;
 	T value;
@@ -145,7 +145,7 @@ std::istream& operator>>(std::istream& in, vvector<T>& vv){
 	return in;
 }
 
-template<class T> 
+template<class T>
 std::ostream& operator<<(std::ostream& os, const vvector<T>& vv){
 	os.precision(4);
 	os<<std::showpos;
@@ -200,4 +200,4 @@ vvector<T> operator/(const vvector<T>& v1, const T1& a)
     v3 /= a;
     return v3;
 }
-#endif //VVECTOR_H 
+#endif //VVECTOR_H

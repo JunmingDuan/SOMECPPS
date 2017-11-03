@@ -19,7 +19,7 @@ class NLEq{
 		double e2;
 		double e3;
 	public:
-		NLEq(Sol &x0, func f): x0(x0), f(f), Max_Ite(50), e1(1e-8), e2(1e-8), e3(1e-8){ } 
+		NLEq(Sol &x0, func f): x0(x0), f(f), Max_Ite(50), e1(1e-8), e2(1e-8), e3(1e-8){ }
 
 		Sol FixedPoint(func f1){
 			int ite(0);

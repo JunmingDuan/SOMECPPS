@@ -18,7 +18,7 @@ class mvector : public std::valarray<Type>
         typedef Type value_type;
 
         typedef std::valarray<Type> Base;
-    public:	
+    public:
         mvector() : Base(Size) { }
 
         mvector(Type val) : Base(val,Size) { }
@@ -118,7 +118,7 @@ std::istream& operator>>(std::istream& in, mvector<T,Size>& mv){
 	return in;
 }
 
-template<class T,int Size> 
+template<class T,int Size>
 std::ostream& operator<<(std::ostream& os, const mvector<T,Size>& mv){
 	os.precision(6);
 	os<<std::showpos;
@@ -127,7 +127,6 @@ std::ostream& operator<<(std::ostream& os, const mvector<T,Size>& mv){
 	for(int i=0;i!=mv.size;++i){
 		os<<mv[i]<<"\t";
 	}
-	
 	return os;
 }
 
