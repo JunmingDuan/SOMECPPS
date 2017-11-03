@@ -1,0 +1,18 @@
+\begin{figure}[H]
+  \centering
+  \subfigure[$\varepsilon=1$]{
+  \includegraphics[width=0.45\textwidth]{./images/e1.pdf}
+  \label{fig:e1}
+}
+\subfigure[$\varepsilon=0.1$]{
+  \includegraphics[width=0.45\textwidth]{./images/e2.pdf}
+  \label{fig:e2}
+}
+\subfigure[$\varepsilon=0.01$]{
+  \includegraphics[width=0.45\textwidth]{./images/e3.pdf}
+  \label{fig:e3}
+}
+\subfigure[$\varepsilon=0.0001$]{
+  \includegraphics[width=0.45\textwidth]{./images/e4.pdf}
+  \label{fig:e4}
+}

@@ -1,0 +1,96 @@
+\documentclass[10pt]{beamer}
+\usepackage{ctexutf8}
+\usepackage{amsmath,amssymb,amsthm,graphicx,hyperref,srcltx,overpic,color,xcolor,
+multirow,subfigure,bm,indentfirst,tabularx,tikz}
+%%%%%主题设置%%%%%
+\usefonttheme[onlymath]{serif}
+%\usetheme{Warsaw}
+%\usetheme{Berkeley} 
+%\usetheme{PaloAlto} 
+%\usetheme{Goettingen} 
+%\usetheme{Hannover}   
+%\usetheme{Antibes}  
+%\usetheme{JuanLesPins}  
+%\usetheme{Montpellier} 
+%\usetheme{Bergen}   
+%\usetheme{boxes} 
+%\usetheme{Bergen} 
+%\usetheme{Madrid} 
+\usetheme{Pittsburgh} 
+%\usetheme{Rochester} 
+%\usetheme{Berlin}   
+%\usetheme{Ilmenau}   
+%\usetheme{Dresden} 
+%\usetheme{Darmstadt}  
+%\usetheme{Frankfurt} 
+%\usetheme{Singapore}  
+%\usetheme{Szeged} 
+%\usetheme{Copenhagen} 
+%\usetheme{Luebeck} 
+%\usetheme{Malmoe} 
+%\usetheme{Warsaw} 
+
+%\usecolortheme{albatross} 
+%\usecolortheme{beetle} 
+%\usecolortheme{dove} 
+%\usecolortheme{fly} 
+%\usecolortheme{seagull} 
+%\usecolortheme{crane} 
+%\usecolortheme{rose} 
+%\usecolortheme{lily}  
+%\usecolortheme{orchid} 
+%\usecolortheme{whale}  
+\usecolortheme{seahorse} %     
+%\usecolortheme{sidebartab} 
+%\usecolortheme{dolphin}  
+\usetheme{Warsaw}
+\useoutertheme{smoothbars}
+\setbeamercovered{transparent}
+%\usepackage{beamerthemetree}
+\setbeamertemplate{navigation symbols}{}%隐藏导航栏
+%\setbeamertemplate{footline}[frame number]%添加页码
+%%%%%添加页码%%%%%
+\setbeamercolor{footcolor}{fg=white,bg=blue!55} 
+\setbeamertemplate{footline}
+{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,right]{footcolor}      
+       \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}
+  \vskip0pt
+}
+%%%%%源代码包%%%%%%
+%\usepackage{listings}
+% texcl为true时，注释内容被当做LaTeX代码来处理
+%\lstset{language=C++,basicstyle=\tiny\tt,extendedchars=false,lineskip=-2pt,commentstyle=\rm\color{green!30!black},keywordstyle=\bf,stringstyle=\color{red},showstringspaces=false,identifierstyle=\color{blue},numberstyle=\color{magenta},texcl=true,emphstyle=\sf\bfseries\color{red!50!black}\fcolorbox{orange!40!white}{.},numbers=left,frame=single,frame=shadowbox,rulesepcolor=\color{blue}}
+%%%%%自动设置内容提要%%%%%
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>{内容提要}
+%    \tableofcontents[currentsection,hideallsubsections]
+%  \end{frame}
+%}
+%%%%%自动设置基本信息%%%%%
+\makeatletter
+\AtBeginDocument{\hypersetup{pdftitle = {\@title},pdfauthor = {\@author}}}
+\makeatother
+%%%%%自定义命令%%%%%
+\newcommand\pdd[1]{\dfrac{\partial}{\partial {#1}}}
+\newcommand\pd[2]{\dfrac{\partial {#1}}{\partial {#2}}}
+\newcommand\od[2]{\dfrac{\mathrm{d}{#1}}{\mathrm{d}{#2}}}
+%%%%%基本信息%%%%%
+\title{}
+\author{陈~~里}
+\institute[SMS, PKU]{北京大学~~数学科学学院}
+\date{}
+
+\begin{document}
+\logo{\includegraphics[width=0.8cm]{~/Templates/fig/pkulogo.png}}
+\frame[plain]{\titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%			正  文		%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
